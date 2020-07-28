@@ -1,4 +1,5 @@
 const nav = document.getElementById("nav-bar");
+const header = document.querySelector("header");
 const menuCheckBox = document.getElementById("menu");
 const body = document.querySelector("body");
 const links = document.querySelectorAll(".nav-link");
@@ -14,6 +15,10 @@ const serviceCards = document.querySelectorAll(".services-card");
 const projectTitle = document.getElementById("project-title");
 const projectTiles = document.querySelectorAll(".project-tile");
 const contactSection = document.getElementById("contact");
+let prevScroll;
+let headerHeight = 80;
+
+console.log(header);
 
 if (hours > 4 && hours < 12) {
   greeting.textContent = "Good morning!";
@@ -42,10 +47,11 @@ const closeNav = () => {
 links.forEach((e) => e.addEventListener("click", closeNav));
 
 window.addEventListener("scroll", () => {
-  var scroll = this.scrollY;
-  if (scroll > 450) {
-    aboutSection.style.opacity = 1;
-  }
+  let scroll = this.scrollY;
+  if (scroll)
+    if (scroll > 450) {
+      aboutSection.style.opacity = 1;
+    }
   if (scroll > 1050) {
     servicesSection.style.opacity = 1;
     let time = 300;
@@ -67,9 +73,18 @@ window.addEventListener("scroll", () => {
     }
   }
 
-  if (scroll > 3950) {
+  if (scroll > 3700) {
     contactSection.style.opacity = 1;
   }
+
+  if (scroll > prevScroll) {
+    if (scroll > headerHeight) {
+      header.classList.add("header-up");
+    }
+  } else {
+    header.classList.remove("header-up");
+  }
+  prevScroll = scroll;
 });
 
 setTimeout(function () {
