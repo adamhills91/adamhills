@@ -25,6 +25,12 @@
 
 a {
   text-decoration: none;
+  color: var(--dark);
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--accent);
 }
 
 header {
@@ -33,9 +39,9 @@ header {
   background-color: white;
   position: fixed;
   top: 0;
-  padding: 10px 0;
+  padding: 10px 5%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   z-index: 10;
   transition: top 0.2s ease-in-out;
@@ -46,8 +52,6 @@ header {
 }
 
 #header-logo {
-  /* background-color: pink; */
-  /* width: 100%; */
   max-width: 100px;
   height: 100%;
 }
@@ -103,13 +107,11 @@ label::after {
 
 #nav-bar {
   width: 0;
-  overflow: hidden;
-  /* margin-top: 50px; */
   transition: all 0.3s ease-out;
   position: fixed;
   z-index: 1;
   right: 0px;
-  top: 28px;
+  top: 60px;
 }
 
 #nav-bar ul {
@@ -117,6 +119,7 @@ label::after {
   text-align: center;
   padding: 20px;
   background-color: white;
+  width: 100%;
   height: calc(100vh - 28px);
 }
 
@@ -127,14 +130,8 @@ label::after {
 
 #nav-bar ul li a {
   font-weight: bold;
-  transition: color 0.2s;
-  color: var(--dark);
   font-size: 1.2rem;
   text-decoration: none;
-}
-
-#nav-bar ul li a:hover {
-  color: var(--accent);
 }
 
 #intro {
@@ -142,8 +139,8 @@ label::after {
   background-image: url(images/background3.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: right;
-  background-size: cover;
+  background-position: top right;
+  background-size: contain;
 }
 
 #main-title {
@@ -208,7 +205,7 @@ button:focus {
 }
 
 #intro button {
-  transition: all 1s;
+  transition: background-color 0.2s, opacity 1s;
 }
 
 #intro button a {
@@ -270,7 +267,6 @@ b {
   margin: 50px 0 0;
   text-align: center;
   padding-bottom: 40px;
-  /* background-color: pink; */
 }
 #about-buttons button {
   margin: 0 2% 0 0;
@@ -294,10 +290,17 @@ b {
   transition: opacity 1.2s;
 }
 
+#services-grid {
+  display: flex;
+  margin: 0 30px;
+  flex-direction: column;
+}
+
 .services-card {
   text-align: center;
   margin: 0 auto 40px;
-  width: 60%;
+  width: 50%;
+  max-width: 200px;
   opacity: 0;
   transition: opacity 1.2s;
 }
@@ -327,6 +330,13 @@ b {
   transition: opacity 1.2s;
 }
 
+#project-grid {
+  padding: 0 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 #project-title,
 .project-tile {
   opacity: 0;
@@ -335,8 +345,8 @@ b {
 
 #projects article {
   text-align: center;
-  width: 70%;
-  margin: 20px auto;
+  width: 300px;
+  margin: 10px 10px;
   position: relative;
 }
 
@@ -396,11 +406,12 @@ b {
 #contact {
   opacity: 0;
   transition: opacity 1.2s;
+  padding: 0 5%;
 }
 
 #contact-container {
   margin: 0 auto;
-  padding: 0 5%;
+  /* padding: 0 5%; */
 }
 
 #contact h3,
@@ -430,7 +441,7 @@ form input[type="submit"] {
   background-color: var(--accent);
   border: 2px solid var(--accent);
   color: white;
-  width: 50%;
+  width: 150px;
   display: block;
   padding: 15px 0;
   transition: background-color 0.2s;
@@ -460,7 +471,7 @@ footer {
   margin: 0 auto;
   padding: 40px 0 0;
   width: 25%;
-  max-width: 150px;
+  max-width: 130px;
 }
 
 #footer-links {
@@ -500,4 +511,191 @@ footer p {
 
 footer span {
   color: var(--accent);
+}
+
+@media only screen and (min-width: 660px) {
+  header {
+    height: 100px;
+    padding: 10px 5%;
+  }
+
+  .header-up {
+    top: -100px;
+  }
+
+  #header-logo {
+    max-width: 100px;
+    height: 70%;
+  }
+  #nav-bar {
+    top: 100px;
+    max-width: 1000px;
+  }
+
+  #nav-bar ul li {
+    width: 100%;
+    padding: 30px 0;
+  }
+  #nav-bar ul li a {
+    font-size: 1.3rem;
+  }
+  #greeting {
+    font-size: 1.3rem;
+  }
+
+  #intro h1,
+  #intro .accent {
+    font-size: 6vw;
+  }
+
+  #intro h3 {
+    font-size: 1.3rem;
+  }
+
+  #intro button {
+    margin: 60px 0 0;
+  }
+
+  #intro {
+    background-position: top right;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 100px;
+  }
+  #profile-photo {
+    width: 35%;
+    max-width: 300px;
+    position: absolute;
+    right: 40px;
+    bottom: 0;
+  }
+
+  #about-buttons {
+    margin: 50px 5% 0;
+    text-align: left;
+  }
+  #services-grid {
+    display: flex;
+    max-width: 1000px;
+    margin: 30px auto;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .services-card {
+    margin: 0 30px 40px;
+  }
+  #projects article {
+    margin: 10px;
+    position: relative;
+  }
+
+  #contact-container {
+    margin-top: 30px;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-around;
+  }
+  form {
+    width: 40%;
+    max-width: 500px;
+  }
+  table {
+    margin: 20px;
+    width: 40%;
+  }
+
+  .col1 {
+    text-align: center;
+  }
+
+  .col1 i {
+    font-size: 1.3rem;
+    color: var(--accent);
+    margin: 20px 30px 20px 0;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  label {
+    display: none;
+  }
+
+  header {
+    position: static;
+  }
+
+  #nav-bar {
+    width: 60%;
+    overflow: visible;
+    position: static;
+    margin-right: 0;
+  }
+
+  #nav-bar ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    height: auto;
+  }
+
+  #nav-bar ul li {
+    /* width: 100%; */
+    padding: 0;
+    margin: 0 20px;
+    /* text-align: center; */
+    /* margin: 0 60px; */
+  }
+
+  #nav-bar ul li a {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  #contact-link {
+    color: var(--accent);
+    border: 2px solid var(--accent);
+    padding: 15px 30px;
+    transition: background-color 0.2s;
+  }
+  #contact-link:hover {
+    background-color: var(--accent);
+    color: var(--light);
+  }
+
+  #intro-container {
+    max-width: 2000px;
+    margin: 0;
+    position: relative;
+  }
+  #intro h1,
+  #intro .accent {
+    font-size: 5rem;
+  }
+  #profile-photo {
+    width: 32%;
+    max-width: 350px;
+    position: absolute;
+    left: 70%;
+    bottom: -100px;
+  }
+  #about-text {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  header,
+  #intro,
+  #about,
+  #services,
+  #contact {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  #profile-photo {
+    left: 200px;
+  }
+  #about-text {
+    padding: 0;
+  }
 }

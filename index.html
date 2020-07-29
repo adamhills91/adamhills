@@ -19,31 +19,36 @@
       <img src="images/logo1-darkgrey.png" alt="Logo" id="header-logo" />
       <input id="menu" type="checkbox" />
       <label for="menu"></label>
+      <nav id="nav-bar">
+        <ul>
+          <li><a href="#intro" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li>
+            <a href="#contact" class="nav-link" id="contact-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </header>
-    <nav id="nav-bar">
-      <ul>
-        <li><a href="#intro" class="nav-link">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#services" class="nav-link">Services</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
-    </nav>
+
     <section id="intro">
-      <h4 id="greeting" class="inactive">Hello!</h4>
-      <div id="main-title" class="inactive">
-        <h1>I'm <span class="accent">Adam Hills</span></h1>
-        <h3>Freelance Web Developer & Designer</h3>
+      <div id="intro-container">
+        <h4 id="greeting" class="inactive">Hello!</h4>
+        <div id="main-title" class="inactive">
+          <h1>I'm <span class="accent">Adam Hills</span></h1>
+          <h3>Freelance Web Developer & Designer</h3>
+        </div>
+        <button id="hire-button" class="inactive">
+          <a href="#contact">Hire Me</a>
+        </button>
+        <img
+          src="images/man.png"
+          alt="Profile Photo"
+          id="profile-photo"
+          class="inactive"
+        />
       </div>
-      <button id="hire-button" class="inactive">
-        <a href="#contact">Hire Me</a>
-      </button>
-      <img
-        src="images/man.png"
-        alt="Profile Photo"
-        id="profile-photo"
-        class="inactive"
-      />
     </section>
     <section id="about">
       <div id="about-content">
@@ -78,21 +83,23 @@
     <section id="services">
       <h2 class="section-title">Services</h2>
       <hr class="title-underline" />
-      <article class="services-card">
-        <i class="fas fa-laptop-code"></i>
-        <h3>Web Development</h3>
-        <p>Clean code written with HTML5, CSS3 and JavaScript</p>
-      </article>
-      <article class="services-card">
-        <i class="fas fa-drafting-compass"></i>
-        <h3>Responsive Design</h3>
-        <p>For desktops, laptops, tablets and mobile phones</p>
-      </article>
-      <article class="services-card">
-        <i class="far fa-smile"></i>
-        <h3>User Experience</h3>
-        <p>Engaging and efficient user interaction</p>
-      </article>
+      <div id="services-grid">
+        <article class="services-card">
+          <i class="fas fa-laptop-code"></i>
+          <h3>Web Development</h3>
+          <p>Clean code written with HTML5, CSS3 and JavaScript</p>
+        </article>
+        <article class="services-card">
+          <i class="fas fa-drafting-compass"></i>
+          <h3>Responsive Design</h3>
+          <p>For desktops, laptops, tablets and mobile phones</p>
+        </article>
+        <article class="services-card">
+          <i class="far fa-smile"></i>
+          <h3>User Experience</h3>
+          <p>Engaging and efficient user interaction</p>
+        </article>
+      </div>
     </section>
     <section id="projects">
       <div id="project-title">
@@ -153,8 +160,8 @@
     <section id="contact">
       <h2 class="section-title light-title">Contact</h2>
       <hr class="title-underline" />
+      <h3>Enough about me... what about <span class="accent">you</span>?</h3>
       <div id="contact-container">
-        <h3>Enough about me... what about <span class="accent">you</span>?</h3>
         <form
           action="
         "
