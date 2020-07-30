@@ -48,16 +48,23 @@ const toggleNavDisplay = () => {
 menuCheckBox.addEventListener("click", toggleNavDisplay);
 
 const closeNav = () => {
-  if (window.screen.width < 1000) {
+  if (window.innerWidth < 1000) {
     nav.style.width = "0";
     body.style.overflow = "";
     menuCheckBox.checked = false;
   }
 };
 links.forEach((e) => e.addEventListener("click", closeNav));
+
 window.addEventListener("resize", () => {
-  if (window.screen.width > 1000) {
+  if (window.innerWidth >= 1000) {
     nav.style.width = "";
+    nav.style.transition = "none";
+    profilePhoto.style.transition = "none";
+    body.style.overflow = "";
+  } else {
+    nav.style.transition = "all 0.3s ease-out";
+    closeNav();
   }
 });
 
