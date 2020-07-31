@@ -48,7 +48,6 @@ links.forEach((e) =>
       closeNav();
       if (destination != "homeSection") {
         header.classList.add("header-up");
-        console.log("hello");
       }
     }
   })
