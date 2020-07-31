@@ -432,7 +432,8 @@ b {
 form {
   margin: 30px 0;
 }
-form input {
+form input,
+form textarea {
   border-radius: 0;
   border: 1px solid var(--dark);
   width: 100%;
@@ -441,9 +442,9 @@ form input {
   -webkit-appearance: none;
 }
 
-/* form textarea {
+form textarea {
   height: 150px;
-} */
+}
 
 form input[type="submit"] {
   background-color: var(--accent);
