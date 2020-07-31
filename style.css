@@ -27,6 +27,7 @@ a {
   text-decoration: none;
   color: var(--dark);
   transition: color 0.2s;
+  cursor: pointer;
 }
 
 a:hover {
@@ -435,6 +436,7 @@ form textarea {
   width: 100%;
   padding: 10px;
   margin: 10px auto;
+  -webkit-appearance: none;
 }
 
 form textarea {
@@ -449,6 +451,7 @@ form input[type="submit"] {
   display: block;
   padding: 15px 0;
   transition: background-color 0.2s;
+  -webkit-appearance: none;
 }
 
 table {

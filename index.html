@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Mulish:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" type="image/x-icon" href="images/icon3.png" />
   </head>
   <body>
     <header>
@@ -21,12 +22,12 @@
       <label for="menu"></label>
       <nav id="nav-bar">
         <ul>
-          <li><a href="#intro" class="nav-link">Home</a></li>
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#services" class="nav-link">Services</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a id="home-link" class="nav-link">Home</a></li>
+          <li><a id="about-link" class="nav-link">About</a></li>
+          <li><a id="services-link" class="nav-link">Services</a></li>
+          <li><a id="projects-link" class="nav-link">Projects</a></li>
           <li>
-            <a href="#contact" class="nav-link" id="contact-link">Contact</a>
+            <a id="contact-link" class="nav-link">Contact</a>
           </li>
         </ul>
       </nav>
@@ -39,11 +40,10 @@
           <h1>I'm <span class="accent">Adam Hills</span></h1>
           <h3>Freelance Web Developer & Designer</h3>
         </div>
-        <a href="#contact">
-          <button id="hire-button" class="inactive">
-            Hire Me
-          </button></a
-        >
+
+        <button id="hire-button" class="inactive">
+          Hire Me
+        </button>
         <img
           src="images/man.png"
           alt="Profile Photo"
@@ -80,8 +80,10 @@
           </p>
         </div>
         <div id="about-buttons">
-          <a href="#projects"><button>Projects</button></a>
-          <button class="alt-button">Download CV</button>
+          <button id="projects-button">Projects</button>
+          <a href="Adam Hills CV.pdf" download
+            ><button class="alt-button">Download CV</button></a
+          >
         </div>
       </div>
     </section>
@@ -217,8 +219,14 @@
           ><li>
             <i class="fas fa-mobile-alt"></i></li
         ></a>
-        <li><i class="fab fa-linkedin-in"></i></li>
-        <li><i class="fab fa-github-alt"></i></li>
+        <a
+          href="https://www.linkedin.com/in/adam-hills-571476b3/"
+          target="_blank"
+          ><li><i class="fab fa-linkedin-in"></i></li
+        ></a>
+        <a href="https://github.com/adamhills91" target="_blank"
+          ><li><i class="fab fa-github-alt"></i></li
+        ></a>
       </ul>
       <p><span>Adam Hills</span> © 2020</p>
     </footer>
