@@ -40,15 +40,22 @@ const closeNav = () => {
 
 // Closes the nav menu and scrolls to section when one of the nav links is clicked
 const links = document.querySelectorAll(".nav-link");
+
+const scrollToTarget = (target) => {
+  const headerOffset = 30;
+  const bodyRect = document.body.getBoundingClientRect().top;
+  let elementRect = eval(target).getBoundingClientRect().top;
+  const elementPosition = elementRect - bodyRect;
+  let offSetPosition = elementPosition - headerOffset;
+  window.scrollTo({ top: offSetPosition, behavior: "smooth" });
+};
+
 links.forEach((e) =>
   e.addEventListener("click", () => {
     let destination = `${e.id.replace("-link", "")}Section`;
-    eval(destination).scrollIntoView({ behavior: "smooth" });
+    scrollToTarget(destination);
     if (window.innerWidth < 1000) {
       closeNav();
-      if (destination != "homeSection") {
-        header.classList.add("header-up");
-      }
     }
   })
 );
@@ -89,7 +96,6 @@ const header = document.querySelector("header"),
   contactSection = document.getElementById("contact"),
   sections = [contactSection, projectsSection, servicesSection, aboutSection];
 
-for (let i = 0; i < sections.length; i++) {}
 window.addEventListener("scroll", () => {
   let scroll = this.scrollY;
   let time = 300;
