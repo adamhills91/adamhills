@@ -47,7 +47,11 @@ const scrollToTarget = (target) => {
   let elementRect = eval(target).getBoundingClientRect().top;
   const elementPosition = elementRect - bodyRect;
   let offSetPosition = elementPosition - headerOffset;
-  window.scrollTo({ top: offSetPosition, behavior: "smooth" });
+  if (window.innerWidth >= 1000 && target === "homeSection") {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  } else {
+    window.scrollTo({ top: offSetPosition, behavior: "smooth" });
+  }
 };
 
 links.forEach((e) =>
@@ -152,6 +156,7 @@ setTimeout(function () {
 setTimeout(function () {
   profilePhoto.classList.toggle("inactive");
 }, 1500);
+
 const hireButton = document.getElementById("hire-button");
 setTimeout(function () {
   hireButton.classList.toggle("inactive");

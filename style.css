@@ -115,15 +115,15 @@ label::after {
   right: 0px;
   top: 50px;
   overflow-y: scroll;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
 }
 
 #nav-bar ul {
   list-style-type: none;
   text-align: center;
-  /* margin-top: 10px; */
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.692);
   padding-bottom: 110px;
-  /* background-color: white; */
   width: 100%;
   height: 100vh;
   overflow-y: scroll;
@@ -131,7 +131,6 @@ label::after {
 
 #nav-bar ul li {
   width: 100%;
-  /* background-color: rgba(255, 255, 255, 0.5); */
   padding: 30px 0;
 }
 
@@ -139,7 +138,6 @@ label::after {
   font-weight: bold;
   font-size: 1.2rem;
   text-decoration: none;
-  /* background-color: rgba(255, 255, 255, 0.5); */
 }
 
 #intro {
