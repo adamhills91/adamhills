@@ -30,12 +30,20 @@ menuCheckBox.addEventListener("click", toggleNavDisplay);
 const openNav = () => {
   nav.style.width = "100%";
   body.style.overflow = "hidden";
+  sections.forEach((e) => {
+    e.style.filter = "blur(8px)";
+  });
+  // body.style.filter = "blur(8px)";
+  // nav.style.filter = "blur(0px)";
 };
 // Function that closes the nav menu
 const closeNav = () => {
   nav.style.width = "0";
   body.style.overflow = "";
   menuCheckBox.checked = false;
+  sections.forEach((e) => {
+    e.style.filter = "none";
+  });
 };
 
 // Closes the nav menu and scrolls to section when one of the nav links is clicked
@@ -98,7 +106,13 @@ const header = document.querySelector("header"),
   projectTitle = document.getElementById("project-title"),
   projectTiles = document.querySelectorAll(".project-tile"),
   contactSection = document.getElementById("contact"),
-  sections = [contactSection, projectsSection, servicesSection, aboutSection];
+  sections = [
+    homeSection,
+    contactSection,
+    projectsSection,
+    servicesSection,
+    aboutSection,
+  ];
 
 window.addEventListener("scroll", () => {
   let scroll = this.scrollY;
