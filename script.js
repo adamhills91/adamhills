@@ -42,6 +42,7 @@ const openNav = () => {
 const closeNav = () => {
   nav.style.width = "0";
   body.style.overflow = "";
+  html.style.overflow = "";
   menuCheckBox.checked = false;
   sections.forEach((e) => {
     e.style.filter = "none";
