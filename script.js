@@ -30,10 +30,6 @@ menuCheckBox.addEventListener("click", toggleNavDisplay);
 // Function that opens the nav menu
 const openNav = () => {
   bodyContainer.style.overflow = "hidden";
-  // body.style.height = "100%";
-  // body.style.overflow = "hidden";
-  // body.style.width = "100%";
-  // body.style.position = "relative";
   nav.style.width = "100%";
   sections.forEach((e) => {
     e.style.filter = "blur(8px)";
@@ -43,7 +39,6 @@ const openNav = () => {
 // Function that closes the nav menu
 const closeNav = () => {
   bodyContainer.style.overflow = "";
-  // body.style.position = "static";
   nav.style.width = "0";
   menuCheckBox.checked = false;
   sections.forEach((e) => {
@@ -91,7 +86,10 @@ window.addEventListener("resize", () => {
     nav.style.width = "";
     nav.style.transition = "none";
     profilePhoto.style.transition = "none";
-    body.style.overflow = "";
+    bodyContainer.style.overflow = "";
+    sections.forEach((e) => {
+      e.style.filter = "none";
+    });
   } else if (window.innerWidth < 1000 && screenToggle) {
     screenToggle = false;
     nav.style.transition = "all 0.3s ease-out";
