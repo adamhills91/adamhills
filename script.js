@@ -31,18 +31,20 @@ const html = document.querySelector("html");
 const openNav = () => {
   nav.style.width = "100%";
   body.style.overflow = "hidden";
+  body.style.position = "relative";
   html.style.overflow = "hidden";
+  html.style.position = "relative";
   sections.forEach((e) => {
     e.style.filter = "blur(8px)";
   });
-  // body.style.filter = "blur(8px)";
-  // nav.style.filter = "blur(0px)";
 };
 // Function that closes the nav menu
 const closeNav = () => {
   nav.style.width = "0";
   body.style.overflow = "";
+  body.style.position = "static";
   html.style.overflow = "";
+  html.style.position = "static";
   menuCheckBox.checked = false;
   sections.forEach((e) => {
     e.style.filter = "none";
