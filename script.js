@@ -16,6 +16,7 @@ setGreeting(hours);
 // Open and close the nav menu when the hamburger icon is clicked
 const nav = document.getElementById("nav-bar"),
   body = document.querySelector("body"),
+  bodyContainer = document.getElementById("body-container"),
   menuCheckBox = document.getElementById("menu"),
   toggleNavDisplay = () => {
     if (menuCheckBox.checked == false) {
@@ -28,10 +29,11 @@ menuCheckBox.addEventListener("click", toggleNavDisplay);
 
 // Function that opens the nav menu
 const openNav = () => {
-  body.style.height = "100%";
-  body.style.overflow = "hidden";
-  body.style.width = "100%";
-  body.style.position = "relative";
+  bodyContainer.style.overflow = "hidden";
+  // body.style.height = "100%";
+  // body.style.overflow = "hidden";
+  // body.style.width = "100%";
+  // body.style.position = "relative";
   nav.style.width = "100%";
   sections.forEach((e) => {
     e.style.filter = "blur(8px)";
@@ -40,8 +42,8 @@ const openNav = () => {
 
 // Function that closes the nav menu
 const closeNav = () => {
-  body.style.overflow = "";
-  body.style.position = "static";
+  bodyContainer.style.overflow = "";
+  // body.style.position = "static";
   nav.style.width = "0";
   menuCheckBox.checked = false;
   sections.forEach((e) => {
