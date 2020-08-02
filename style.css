@@ -23,9 +23,9 @@
   color: var(--accent);
 }
 
-#body-container {
-  position: absolute;
-  width: 100%;
+.locked {
+  position: relative;
+  overflow: hidden;
   height: 100%;
 }
 

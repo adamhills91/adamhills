@@ -29,7 +29,10 @@ menuCheckBox.addEventListener("click", toggleNavDisplay);
 
 // Function that opens the nav menu
 const openNav = () => {
-  bodyContainer.style.overflow = "hidden";
+  let position = scroll;
+  body.classList.add("locked");
+  bodyContainer.classList.add("locked");
+  bodyContainer.scrollTo({ top: scroll });
   nav.style.width = "100%";
   sections.forEach((e) => {
     e.style.filter = "blur(8px)";
@@ -38,7 +41,9 @@ const openNav = () => {
 
 // Function that closes the nav menu
 const closeNav = () => {
-  bodyContainer.style.overflow = "";
+  body.classList.remove("locked");
+  bodyContainer.classList.remove("locked");
+  body.scrollTo({ top: scroll });
   nav.style.width = "0";
   menuCheckBox.checked = false;
   sections.forEach((e) => {
@@ -119,8 +124,9 @@ const header = document.querySelector("header"),
     footer,
   ];
 
+let scroll;
 window.addEventListener("scroll", () => {
-  let scroll = this.scrollY;
+  scroll = this.scrollY;
   let time = 300;
   sections.forEach((item) => {
     if (scroll > item.offsetTop - 400) {
