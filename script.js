@@ -27,9 +27,11 @@ const nav = document.getElementById("nav-bar"),
 menuCheckBox.addEventListener("click", toggleNavDisplay);
 
 // Function that opens the nav menu
+const html = document.querySelector("html");
 const openNav = () => {
   nav.style.width = "100%";
   body.style.overflow = "hidden";
+  html.style.overflow = "hidden";
   sections.forEach((e) => {
     e.style.filter = "blur(8px)";
   });
