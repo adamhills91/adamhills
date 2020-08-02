@@ -569,7 +569,7 @@ footer span {
   }
   #profile-photo {
     width: 40%;
-    max-width: 290px;
+    max-width: 300px;
     position: absolute;
     right: 30px;
     bottom: 0;
@@ -679,9 +679,9 @@ footer span {
   }
   #profile-photo {
     width: 38%;
-    max-width: 350px;
+    max-width: 400px;
     position: absolute;
-    left: 70%;
+    left: 65%;
     bottom: -100px;
   }
   #about-text {
