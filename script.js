@@ -28,9 +28,10 @@ menuCheckBox.addEventListener("click", toggleNavDisplay);
 
 // Function that opens the nav menu
 const openNav = () => {
-  nav.style.width = "100%";
-  body.style.overflow = "hidden";
   body.style.position = "relative";
+  body.style.height = "100%";
+  body.style.overflow = "hidden";
+  nav.style.width = "100%";
   sections.forEach((e) => {
     e.style.filter = "blur(8px)";
   });
