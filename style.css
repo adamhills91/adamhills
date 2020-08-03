@@ -637,10 +637,8 @@ footer span {
   #nav-bar {
     width: 60%;
     max-width: 1000px;
-    overflow: visible;
     position: static;
     margin-right: 0;
-
     padding: 0;
   }
 
@@ -678,13 +676,13 @@ footer span {
   }
   #intro h1,
   #intro .accent {
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
   #profile-photo {
     width: 38%;
-    max-width: 350px;
+    max-width: 380px;
     position: absolute;
-    left: 70%;
+    left: 65%;
     bottom: -100px;
   }
   #about-text {
