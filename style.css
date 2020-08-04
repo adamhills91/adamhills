@@ -441,6 +441,7 @@ form textarea {
   max-width: 450px;
   padding: 10px;
   margin: 10px auto;
+  width: 90%;
   -webkit-appearance: none;
 }
 
