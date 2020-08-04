@@ -418,24 +418,27 @@ b {
 
 #contact-container {
   margin: 0 auto;
-  /* padding: 0 5%; */
 }
 
 #contact h3,
 #contact span {
-  /* margin-bottom: 30px; */
   font-size: 1.3rem;
   text-align: center;
 }
+#form-div {
+  margin: 0 auto;
+}
 
 form {
-  margin: 30px 0;
+  margin: 30px auto;
+  text-align: center;
 }
+
 form input,
 form textarea {
   border-radius: 0;
   border: 1px solid var(--dark);
-  width: 100%;
+  max-width: 450px;
   padding: 10px;
   margin: 10px auto;
   -webkit-appearance: none;
@@ -452,6 +455,7 @@ form input[type="submit"] {
   width: 150px;
   display: block;
   padding: 15px 0;
+  margin: 20px auto 0;
   transition: background-color 0.2s;
   -webkit-appearance: none;
 }
@@ -605,15 +609,32 @@ footer span {
   }
   #contact h3 {
     text-align: left;
-    margin-left: 4%;
   }
   form {
-    width: 40%;
+    width: 100%;
     max-width: 500px;
+    margin: 30px 0;
+    text-align: left;
   }
-  table {
-    margin: 20px;
+  #form-div {
+    margin: 0;
     width: 40%;
+  }
+
+  #table-div {
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+  }
+
+  form input,
+  form textarea {
+    width: 100%;
+  }
+
+  table {
+    margin: 45px 0;
+    width: 100%;
   }
 
   table td,

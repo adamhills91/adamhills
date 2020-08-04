@@ -115,6 +115,18 @@
           <hr class="title-underline" />
         </div>
         <div id="project-grid">
+          <article class="project-tile">
+            <img src="images/fifa.png" alt="" />
+            <div class="project-text">
+              <h3>FIFA 20 - Tournament Team Selector</h3>
+              <a
+                href="https://adamhills91.github.io/FIFA20-randomiser/"
+                target="_blank"
+                ><i class="fas fa-arrow-circle-right"></i
+              ></a>
+              <hr />
+            </div>
+          </article>
           <article id="first-project" class="project-tile">
             <img src="images/alexshort.png" alt="" />
             <div class="project-text">
@@ -137,18 +149,7 @@
               <hr />
             </div>
           </article>
-          <article class="project-tile">
-            <img src="images/fifa.png" alt="" />
-            <div class="project-text">
-              <h3>FIFA 20 - Tournament Team Selector</h3>
-              <a
-                href="https://adamhills91.github.io/FIFA20-randomiser/"
-                target="_blank"
-                ><i class="fas fa-arrow-circle-right"></i
-              ></a>
-              <hr />
-            </div>
-          </article>
+
           <article class="project-tile">
             <img src="images/calculator.png" alt="" />
             <div class="project-text">
@@ -190,52 +191,66 @@
       <section id="contact">
         <h2 class="section-title light-title">Contact</h2>
         <hr class="title-underline" />
-        <h3>Enough about me... what about <span class="accent">you</span>?</h3>
+
         <div id="contact-container">
-          <form
-            name="contact"
-            method="POST"
-            data-netlify="true"
-            id="contactform"
-          >
-            <input type="text" id="name" name="name" placeholder="Name" /><br />
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Email"
-            /><br />
-            <textarea
-              name="message"
-              id="message"
-              placeholder="Message"
-            ></textarea>
-            <input type="submit" value="Send Message" />
-          </form>
-          <table>
-            <tr>
-              <td class="col1"><i class="fas fa-map-marker-alt"></i></td>
-              <td>Plymouth, UK</td>
-            </tr>
-            <tr>
-              <td class="col1">
-                <a href="mailto:adamhills91@gmail.com"
-                  ><i class="far fa-envelope"></i
-                ></a>
-              </td>
-              <td>
-                <a href="mailto:adamhills91@gmail.com">adamhills91@gmail.com</a>
-              </td>
-            </tr>
-            <tr>
-              <td class="col1">
-                <a href="tel:+447815836996"
-                  ><i class="fas fa-mobile-alt"></i
-                ></a>
-              </td>
-              <td><a href="tel:+447815836996">+44 7815 836996</a></td>
-            </tr>
-          </table>
+          <div id="form-div">
+            <h3>
+              Enough about me... what about <span class="accent">you</span>?
+            </h3>
+            <form
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              id="contactform"
+            >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Name"
+              /><br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+              /><br />
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Message"
+              ></textarea>
+              <input type="submit" value="Send Message" />
+            </form>
+          </div>
+          <div id="table-div">
+            <table>
+              <tr>
+                <td class="col1"><i class="fas fa-map-marker-alt"></i></td>
+                <td>Plymouth, UK</td>
+              </tr>
+              <tr>
+                <td class="col1">
+                  <a href="mailto:adamhills91@gmail.com"
+                    ><i class="far fa-envelope"></i
+                  ></a>
+                </td>
+                <td>
+                  <a href="mailto:adamhills91@gmail.com"
+                    >adamhills91@gmail.com</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="col1">
+                  <a href="tel:+447815836996"
+                    ><i class="fas fa-mobile-alt"></i
+                  ></a>
+                </td>
+                <td><a href="tel:+447815836996">+44 7815 836996</a></td>
+              </tr>
+            </table>
+          </div>
         </div>
       </section>
       <footer>
