@@ -662,6 +662,7 @@ footer span {
     position: static;
     margin-right: 0;
     padding: 0;
+    overflow: auto;
   }
 
   #nav-bar ul {
