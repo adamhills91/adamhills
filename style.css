@@ -670,6 +670,7 @@ footer span {
     align-items: center;
     padding: 0;
     height: auto;
+    overflow: auto;
   }
 
   #nav-bar ul li {
