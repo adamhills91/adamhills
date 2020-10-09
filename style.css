@@ -23,12 +23,6 @@
   color: var(--accent);
 }
 
-.locked {
-  position: relative;
-  overflow: hidden;
-  height: 100%;
-}
-
 a {
   text-decoration: none;
   color: var(--dark);
@@ -717,6 +711,18 @@ footer span {
   #profile-photo {
     left: 60%;
   }
+  #intro-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  #about-content {
+    max-width: 1340px;
+    margin: 0 auto;
+  }
+  #project-grid {
+    max-width: 1500px;
+    margin: 0 auto;
+  }
 }
 @media only screen and (min-width: 2000px) {
   header,
@@ -728,7 +734,7 @@ footer span {
     padding-right: 10%;
   }
   #profile-photo {
-    left: 200px;
+    /* left: 100px; */
   }
   #about-text {
     padding: 0;

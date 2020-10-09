@@ -195,6 +195,7 @@ const projectsButton = document.getElementById("projects-button");
 projectsButton.addEventListener("click", () => {
   projectsSection.scrollIntoView({ behavior: "smooth" });
 });
+
 // Displays information over project tiles when they are clicked
 const projectText = document.querySelectorAll(".project-text");
 projectTiles.forEach((item) => {
