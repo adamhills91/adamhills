@@ -326,16 +326,16 @@ b {
 }
 
 #projects {
-  background-color: var(--light);
   padding-bottom: 30px;
   transition: opacity 1.2s;
 }
 
 #project-grid {
-  padding: 0 50px;
+  padding: 0px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 0 auto;
 }
 
 #project-title,
@@ -353,8 +353,7 @@ b {
 
 #projects article img {
   width: 100%;
-  border: 1px solid black;
-  /* box-shadow: 2px 5px 5px #111111; */
+  box-shadow: 0 5px 10px #c8c8c8;
 }
 
 .project-text {
@@ -405,9 +404,10 @@ b {
 }
 
 #contact {
+  background-color: var(--light);
   opacity: 0;
   transition: opacity 1.2s;
-  padding: 0 5%;
+  padding: 0 5% 40px;
 }
 
 #contact-container {
@@ -432,7 +432,7 @@ form input,
 form textarea {
   border-radius: 0;
   border: 1px solid var(--dark);
-  max-width: 450px;
+  /* max-width: 450px; */
   padding: 10px;
   margin: 10px auto;
   width: 90%;
@@ -471,7 +471,6 @@ table {
 
 footer {
   background-color: var(--dark);
-  margin-top: 40px;
 }
 
 #footer-logo {
@@ -607,13 +606,12 @@ footer span {
   }
   form {
     width: 100%;
-    max-width: 500px;
-    margin: 30px 0;
-    text-align: left;
+    /* max-width: 500px; */
+    margin: 30px auto;
+    text-align: center;
   }
   #form-div {
-    margin: 0;
-    width: 40%;
+    margin: 0 auto;
   }
 
   #table-div {
@@ -720,7 +718,7 @@ footer span {
     margin: 0 auto;
   }
   #project-grid {
-    max-width: 1500px;
+    max-width: 1200px;
     margin: 0 auto;
   }
 }
