@@ -119,7 +119,6 @@ const header = document.querySelector("header"),
     homeSection,
     contactSection,
     projectsSection,
-    servicesSection,
     aboutSection,
     footer,
   ];
@@ -130,15 +129,7 @@ window.addEventListener("scroll", () => {
   let time = 300;
   sections.forEach((item) => {
     if (scroll > item.offsetTop - 400) {
-      if (item === servicesSection) {
-        //   // Causes services cards to fade in one after the other by *time* milliseconds.
-        serviceCards.forEach((e) => {
-          setTimeout(function () {
-            e.style.opacity = 1;
-          }, time);
-          time += 300;
-        });
-      } else if (item === projectsSection) {
+      if (item === projectsSection) {
         projectTitle.style.opacity = 1;
         // Causes project tiles to fade in one after the other by *time* milliseconds.
         projectTiles.forEach((e) => {
