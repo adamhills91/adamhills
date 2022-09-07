@@ -29,7 +29,6 @@ menuCheckBox.addEventListener("click", toggleNavDisplay);
 
 // Function that opens the nav menu
 const openNav = () => {
-  let position = scroll;
   body.classList.add("locked");
   bodyContainer.classList.add("locked");
   bodyContainer.scrollTo({ top: scroll });
