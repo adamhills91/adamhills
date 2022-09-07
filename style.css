@@ -577,9 +577,9 @@ footer span {
   }
 
   #about-buttons {
-    margin: 50px 5% 0;
     text-align: left;
   }
+
   #services-grid {
     display: flex;
     max-width: 1000px;
