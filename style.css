@@ -276,10 +276,14 @@ b {
 }
 
 .alt-button {
+  display: inline-block;
   background: transparent;
   border: 2px solid var(--accent);
   color: var(--accent);
-  box-sizing: border-box;
+  padding: 15px 0;
+  width: 150px;
+  text-align: center;
+  transition: background-color 0.2s, color 0.2s;
 }
 
 .alt-button:hover {
