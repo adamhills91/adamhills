@@ -331,10 +331,10 @@ b {
 }
 
 #project-grid {
-  padding: 0px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  padding: 0 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
   margin: 0 auto;
 }
 
@@ -346,8 +346,6 @@ b {
 
 #projects article {
   text-align: center;
-  width: 300px;
-  margin: 10px 10px;
   position: relative;
 }
 
@@ -594,7 +592,6 @@ footer span {
     margin: 0 30px 40px;
   }
   #projects article {
-    margin: 10px;
     position: relative;
   }
 
@@ -721,7 +718,7 @@ footer span {
     margin: 0 auto;
   }
   #project-grid {
-    max-width: 1200px;
+    max-width: 1260px;
     margin: 0 auto;
   }
 }
