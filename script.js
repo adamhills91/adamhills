@@ -113,7 +113,7 @@ const header = document.querySelector("header"),
   projectsSection = document.getElementById("projects"),
   projectTitle = document.getElementById("project-title"),
   projectTiles = document.querySelectorAll(".project-tile"),
-  contactSection = document.getElementById("contact"),
+  contactSection = document.getElementById("contact-container"),
   footer = document.querySelector("footer"),
   sections = [
     homeSection,

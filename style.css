@@ -405,13 +405,15 @@ b {
 
 #contact {
   background-color: var(--light);
-  opacity: 0;
-  transition: opacity 1.2s;
   padding: 0 5% 40px;
 }
 
 #contact-container {
+  opacity: 0;
+  transition: opacity 1.2s;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 #contact h3,
@@ -578,6 +580,7 @@ footer span {
 
   #about-buttons {
     text-align: left;
+    margin: 50px 5% 0;
   }
 
   #services-grid {
@@ -720,21 +723,5 @@ footer span {
   #project-grid {
     max-width: 1200px;
     margin: 0 auto;
-  }
-}
-@media only screen and (min-width: 2000px) {
-  header,
-  #intro,
-  #about,
-  #services,
-  #contact {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-  #profile-photo {
-    /* left: 100px; */
-  }
-  #about-text {
-    padding: 0;
   }
 }

@@ -19,13 +19,18 @@
     />
     <link rel="shortcut icon" type="image/x-icon" href="images/icon3.png" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X022HV7EKQ"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-X022HV7EKQ"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'G-X022HV7EKQ');
+      gtag("config", "G-X022HV7EKQ");
     </script>
   </head>
   <body>
@@ -72,10 +77,10 @@
           <h2 class="section-title">About Me</h2>
           <hr class="title-underline" />
           <div id="about-text">
-            <h2>Hello there! My name is <span class="accent">Adam Hills.</span></h2>
-            <p>
-              I’m a <b>Web Developer</b> based in Plymouth,UK.
-            </p>
+            <h2>
+              Hello there! My name is <span class="accent">Adam Hills.</span>
+            </h2>
+            <p>I’m a <b>Web Developer</b> based in Plymouth,UK.</p>
             <p>
               I love to build <b>user-friendly</b> and
               <b>responsive</b> websites for mobile, tablet and desktop. I have
@@ -87,10 +92,9 @@
               <a href="http://www.confer.uk.com" target="_blank">Confer</a>.
             </p>
             <p>
-              If I’m not coding, you’ll find me trekking through the
-              woods with my dog, jamming on my guitar, rage quitting a video
-              game, or drinking coffee - barista experience comes in handy,
-              believe me.
+              If I’m not coding, you’ll find me trekking through the woods with
+              my dog, jamming on my guitar, rage quitting a video game, or
+              drinking coffee - barista experience comes in handy, believe me.
             </p>
             <p>
               Take a look through my projects below and feel free to get in
@@ -177,10 +181,7 @@
             </div>
           </article>
           <article class="project-tile">
-            <img
-              src="images/rps.png"
-              alt="Rock, Paper, Scissors"
-            />
+            <img src="images/rps.png" alt="Rock, Paper, Scissors" />
             <div class="project-text">
               <h3>Rock, Paper, Scissors</h3>
               <a href="https://adamhills91.github.io/rps/" target="_blank"
@@ -192,41 +193,36 @@
         </div>
       </section>
       <section id="contact">
+        <div id="contact-container">
         <h2 class="section-title light-title">Contact</h2>
         <hr class="title-underline" />
 
-        <div id="contact-container">
-          <div id="form-div">
-            <h3>
-              <span class="accent">Get in touch</span> if you would like to
-              discuss your current or future website:
-            </h3>
-            <form
-              name="contact"
-              method="POST"
-              data-netlify="true"
-              id="contactform"
-            >
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Name"
-              /><br />
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Email"
-              /><br />
-              <textarea
-                name="message"
-                id="message"
-                placeholder="Message"
-              ></textarea>
-              <input type="submit" value="Send Message" />
-            </form>
-          </div>
+        <div id="form-div">
+          <h3>
+            <span class="accent">Get in touch</span> if you would like to
+            discuss your current or future website:
+          </h3>
+          <form
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            id="contactform"
+          >
+            <input type="text" id="name" name="name" placeholder="Name" /><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+            /><br />
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Message"
+            ></textarea>
+            <input type="submit" value="Send Message" />
+          </form>
+        </div>
       </section>
       <footer>
         <img
